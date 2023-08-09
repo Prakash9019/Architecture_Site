@@ -9957,14 +9957,14 @@ button.qty-btn.minus {
 }
 
 .kmb-text-column-description .kmb-text-description {
-    -webkit-column-width: 200px;
-    -moz-column-width: 200px;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    -moz-columns: 200px 2;
+   column-width: 200px;
+   column-width: 200px;
+    column-count: 2;
+    column-count: 2;
     columns: 200px 2;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
+    columns: 200px 2;
+    column-gap: 30px;
+    column-gap: 30px;
     grid-column-gap: 30px;
     column-gap: 30px
 }
@@ -10050,6 +10050,53 @@ button.qty-btn.minus {
 .kmb-collection-top-filter-group .kmb-site-icon-angle-down:before {
     color: var(--storeBodyColor)
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .slider-container {
+    width: 200%;
+    height: 100vh;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  #slide1 {
+    background-color: #3498db;
+  }
+  
+  #slide2 {
+    background-color: #e74c3c;
+    transform: translateX(100%);
+  }
+  
+  .slide-checkbox {
+    display: none;
+  }
+  
+  .slide-checkbox:checked ~ .slider-container {
+    transform: translateX(-50%);
+  }
+  
+  .slide-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
 
 .kmb-collection-filter-by-price-field-row {
     display: flex;
@@ -14216,7 +14263,7 @@ td.invoice-data-total-price,th.invoice-data-total-price {
 }
 
 .kmb-image-filter-aden,.kmb-site-image-filter-name-aden .kmb-widget-image-item {
-    webkit-filter: hue-rotate(-20deg) contrast(.9) saturate(.85) brightness(1.2);
+   filter: hue-rotate(-20deg) contrast(.9) saturate(.85) brightness(1.2);
     filter: hue-rotate(-20deg) contrast(.9) saturate(.85) brightness(1.2)
 }
 
@@ -15964,7 +16011,7 @@ td.invoice-data-total-price,th.invoice-data-total-price {
     background: transparent;
     color: #333;
     font-weight: 700;
-    -webkit-appearance: none;
+  appearance: none;
     opacity: 0;
     transition: opacity .3s
 }
@@ -17897,7 +17944,7 @@ button,select {
 }
 
 [type=button],[type=reset],[type=submit],button {
-    -webkit-appearance: button
+   appearance: button
 }
 
 progress {
@@ -17905,7 +17952,7 @@ progress {
 }
 
 [type=search] {
-    -webkit-appearance: textfield;
+   appearance: textfield;
     outline-offset: -2px
 }
 
