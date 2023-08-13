@@ -19,4 +19,22 @@ console.log("hello");
        
     }
 
+    function hi(){
+        let a=document.getElementsByClassName("kmb-site-slider-stage");
+        let b=document.getElementById("prev-btn");
+
+        b.addEventListener("click", ()=>{
+            console.log("hi fun");
+        })
+        // let x= a[0].classList.contains("kmb-slide-prev-btn");
+        // if(x){
+        //     z[0].classList.remove('kmb-visible-menu')
+        //     c[0].classList.remove('kmb-collapsed-menu')
+        // }
+        // else{
+        //      z[0].classList.add('kmb-visible-menu')
+        //     c[0].classList.add('kmb-collapsed-menu')
+        // }
+        
+    }
    

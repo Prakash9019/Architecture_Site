@@ -1,23 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-.kmb-site-font-12 {
-    font-size: 12px
-}
 
-.kmb-site-font-14 {
-    font-size: 14px
-}
 
-.kmb-site-font-16 {
-    font-size: 16px
-}
 
-.kmb-site-font-18 {
-    font-size: 18px
-}
-
-.kmb-site-font-24 {
-    font-size: 24px
-}
 
 .kmb-site-font-30 {
     font-size: 30px
@@ -20011,4 +19995,48 @@ img,video {
                         --blogBtnSecondaryDisabledBg: #FFFFFF;
                         --blogBtnSecondaryDisabledColor: #FF8620;
                     }
-                
+            
+/* Default styles for slider */
+.kmb-service-slider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .kmb-slider-stage {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .kmb-service-slide-item {
+    flex: 0 0 285px;
+    margin-right: 15px;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .kmb-service-slide-item {
+      flex: 0 0 100%; /* Take full width on smaller screens */
+      margin-right: 0;
+      margin-bottom: 15px; /* Add spacing between cards */
+    }
+  }
+  
+  /* Slider navigation buttons */
+  .kmb-site-slider-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .kmb-slide-prev-btn,
+  .kmb-slide-next-btn {
+    background-color: #f2f2f2;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .kmb-widget-titles-info{
+    width: fit-content;
+  }
